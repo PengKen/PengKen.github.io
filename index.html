@@ -1692,7 +1692,9 @@ function musicPlay(isPlay) {
 }
 autoPlayMusic();
 
-document.body.addEventListener('touchstart', function () { });
+window.ontouchstart = function(e) { 
+    e.preventDefault(); 
+};
     </script>
   
 
